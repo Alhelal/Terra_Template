@@ -8,6 +8,9 @@ variable "vpc_id" {
 variable "vpc_cidr_prefix" {
   description = "First 2 section of the VPC Cidr to create "
 }
+variable "vpc_cidr_mid" {
+  description = "Middle octet of the VPC Cidr to create "
+}
 ## Route Table
 variable "public_rt_id" {
   description = "ID of the Public Route Table"

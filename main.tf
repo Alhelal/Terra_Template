@@ -21,6 +21,7 @@ module "subnet_network" {
   source = "./modules/network/subnet/"
   vpc_id = "${module.vpc_network.vpc_id}"
   vpc_cidr_prefix = "${module.vpc_network.vpc_cidr_prefix}"
+  vpc_cidr_mid = "${module.vpc_network.vpc_cidr_mid}"
   region = "${var.region}"
   public_rt_id = "${module.route_table_network.public_rt_id}"
   private_rt1a_id = "${module.route_table_network.private_rt1a_id}"

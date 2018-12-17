@@ -2,14 +2,18 @@
 variable "vpc_cidr_prefix" {
   type = "map"
   default = {
-    "Home_Dev" = "10.131"
-    "Home_Prod" = "10.130"
+    "Home_Prod" = "10.10"
+    "Home_Stg" = "10.10"
+    "Home_QA" = "10.10"
+    "Home_Dev" = "10.10"
   }
 }
-variable "vpc_cidr_suffix" {
+variable "vpc_cidr_mid" {
   type = "map"
   default = {
-    "Home_Dev" = "0.0/21"
-    "Home_Prod" = "0.0/21"
+    "Home_Prod" = "0"
+    "Home_Stg" = "8"
+    "Home_QA" = "16"
+    "Home_Dev" = "24"
   }
 }
